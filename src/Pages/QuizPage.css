@@ -1,0 +1,97 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.flashcard {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  margin: 2rem;
+}
+
+.flashcard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.answer-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #ffeb3b;
+  text-shadow: 1px 1px 2px #000;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.multiple-choice-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease forwards;
+  margin: 2rem;
+}
+
+.multiple-choice-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary,
+.btn-secondary {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  margin: 2rem;
+  background-color: #0056b3 !important;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: #212529;
+  text-shadow: 2px 2px 8px #a0aec0;
+  margin-bottom: 2rem;
+}
+
+.form-check-label {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.score-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #198754;
+  text-shadow: 1px 1px 2px #14532d;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #e9f5ff;
+}
